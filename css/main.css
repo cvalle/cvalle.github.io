@@ -1,0 +1,67 @@
+* {
+    /*animate everything*/
+    -webkit-transition: all 1s;
+    /*start with blank canvas tags*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+}
+
+body {
+    
+    font-family: 'Overpass Mono', monospace;
+    font-size: 18px;
+    color: #333333;/* #141823;*/
+    margin: 0 0 0 0;
+    transform-style: preserve-3d;
+    background-color: #fff;
+    text-align: left;
+}
+
+header {
+    text-align: center;
+    padding: 5em 2em 0 2em;
+}
+
+h1 {
+    padding-bottom: .2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    padding: 2rem 10rem 2rem 10rem;
+}
+
+section > h1 {
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+nav {
+    padding: 1rem 0 1rem 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+button {
+    border: none;
+    border-color: transparent;
+}
+
+#linkedin {
+    background-image: url('../img/linkedin.svg');
+    background-size: 100% 100%;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
