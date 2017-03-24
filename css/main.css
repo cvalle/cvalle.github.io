@@ -1,6 +1,6 @@
 * {
     /*animate everything*/
-    -webkit-transition: all 1s;
+/*    -webkit-transition: all 1s;*/
     /*start with blank canvas tags*/
     margin: 0;
     padding: 0;
@@ -11,9 +11,7 @@ html {
 }
 
 body {
-    
     font-family: 'Overpass Mono', monospace;
-    font-size: 18px;
     color: #333333;/* #141823;*/
     margin: 0 0 0 0;
     transform-style: preserve-3d;
@@ -23,21 +21,41 @@ body {
 
 header {
     text-align: center;
-    padding: 5em 2em 0 2em;
 }
 
 h1 {
-    padding-bottom: .2em;
+    padding-bottom: 2%;
     font-family: 'Quicksand', sans-serif;
 }
 
-section {
-    padding: 2rem 10rem 2rem 10rem;
+/* small screen */
+@media screen and (max-width:600px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        padding: 8% 1% 0 1%;
+    }
+    section {
+        padding: 1% 6% 1% 6%;
+    }
+}
+
+@media screen and (min-width:601px) {
+    html {
+        font-size: 18px;
+    }
+    header {
+        padding: 5% 1% 0 1%;
+    }
+    section {
+        padding: 2% 8% 2% 8%;
+    }
 }
 
 section > h1 {
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: 1%;
 }
 
 nav {
@@ -49,7 +67,7 @@ ul {
 }
 
 li {
-    display: inline;
+    display: inline-block;
 }
 
 button {
@@ -57,11 +75,21 @@ button {
     border-color: transparent;
 }
 
-#linkedin {
-    background-image: url('../img/linkedin.svg');
+.buttonlink{
     background-size: 100% 100%;
     background-color: transparent;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     background-repeat: no-repeat;
+    display: block;
+}
+
+#linkedin {
+    background-image: url('../img/linkedin.svg');
+}
+
+#github {
+    background-image: url('../img/github.png');
+    width: 4rem;
+    height: 3.5rem;
 }
