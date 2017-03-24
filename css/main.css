@@ -85,11 +85,11 @@ button {
 }
 
 #linkedin {
-    background-image: url('../img/linkedin.svg');
+    background-image: url('img/linkedin.svg');
 }
 
 #github {
-    background-image: url('../img/github.png');
+    background-image: url('img/github.png');
     width: 4rem;
     height: 3.5rem;
 }
